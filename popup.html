@@ -1,6 +1,110 @@
-<html>
-  <script src="popup.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ReFree</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #0f0f0f;
+        color: #e5e5e5;
+        text-align: center;
+      }
+
+      h3.heading {
+        margin-top: 1rem;
+        font-weight: 600;
+        color: #ffffff;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .btn-success {
+        background-color: #3cb371;
+        color: white;
+      }
+
+      .btn-success:hover {
+        background-color: #2e8b57;
+      }
+
+      .form-check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12px;
+      }
+
+      .form-check-input {
+        margin-right: 8px;
+        width: 18px;
+        height: 18px;
+        accent-color: #3cb371;
+      }
+
+      input[type="number"],
+      select {
+        padding: 6px;
+        border-radius: 5px;
+        border: 1px solid #444;
+        background: #1a1a1a;
+        color: #e5e5e5;
+        font-size: 14px;
+      }
+
+      input[type="number"]:focus,
+      select:focus {
+        outline: 2px solid #3cb371;
+      }
+
+      label {
+        font-size: 14px;
+        margin-left: 4px;
+        color: #cccccc;
+      }
+
+      .container {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
   <body>
-    <h1>ReFree</h1>
+    <h3 class="heading">ReFree</h3>
+
+    <div class="container">
+      <button id="button" class="btn btn-success">Get rewards</button>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="autoCheckbox">
+        <label for="autoCheckbox">Get your Rewars automatically!</label>
+      </div>
+
+      <div class="my-2">
+        <input type="number" id="timeout" value="7" min="0" max="9999">
+        <label for="timeout">Time between each search</label>
+      </div>
+
+      <div class="my-2">
+        <select id="selectLevel">
+          <option value="1">1 (10 searches)</option>
+          <option value="2">2 (30 searches)</option>
+        </select>
+        <label for="selectLevel">Level of Rewards!!!</label>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
   </body>
 </html>
