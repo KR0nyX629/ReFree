@@ -2,10 +2,11 @@
   "manifest_version": 3,
   "name": "ReFree",
   "version": "0.2 (Beta)",
-  "icons": {
-    "32": "ReFree.png"
+  "icons": {   
+    "32": "ReFree.png"   
   },
   "description": "A tool that automates Rewards Point Collection and helps you make the most of it.",
+
   "permissions": [
     "storage"
   ],
@@ -13,10 +14,10 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_icon": {
+    "default_icon":  {
       "32": "ReFree.png"
     },
     "default_popup": "./popup.html",
-    "title": "ReFree"
+    "default_title": "ReFree"
   }
 }
